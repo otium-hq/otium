@@ -18,9 +18,9 @@ Plain markdown the user writes and edits whenever they want. No schema, no migra
 
 Control is granted one capability at a time, at the user's pace. Default is ask. An action outside granted control is not taken.
 
-## ADR-005 — Every action carries its undo
+## ADR-005 — Every action records its way back
 
-No action ships without a reversal path. If it cannot be undone it is Brought, never Handled.
+Undo is the user's remedy, not an inverse operation — resubscribe, correct, call back. Handled is gated on granted authority and confidence, never on reversibility; otherwise the irreversible chores the user most wants gone are the exact ones handed back to them.
 
 ## ADR-006 — The weekly look reports, never grades
 

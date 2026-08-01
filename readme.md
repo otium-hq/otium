@@ -48,8 +48,8 @@ sorter -> model : prompt
 model --> sorter : Outcome
 
 alt Handled
-  sorter -> adapter : act, with its undo
-  sorter -> log : append action + undo
+  sorter -> adapter : act
+  sorter -> log : append action + way back
 else Brought
   sorter -> user : ask
   user --> sorter : decide
