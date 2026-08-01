@@ -45,3 +45,7 @@ Physical work is a Demand with an executor — person, service, or robot. The co
 ## ADR-011 — One log is the product surface
 
 Every Demand and every action appends to one ordered log. Generated views, the weekly look, and undo are all queries over it. No second store.
+
+## ADR-012 — What the user keeps is never Handled
+
+The Rules name what to hand over and what to keep. OTIUM only Handles the first. A Demand touching what they kept is Brought — that friction is the life they asked to protect, and removing it removes the thing.
