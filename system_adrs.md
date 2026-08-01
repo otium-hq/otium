@@ -38,9 +38,9 @@ Rules, event log, and action log export in full to open formats. No capability i
 
 Finances, voice and email, robot. Each is independently complete and none requires the next. Stopping at one is a supported end state, not an unfinished setup.
 
-## ADR-010 — Bring your own hardware
+## ADR-010 — Physical work routes to an executor
 
-Physical work is a Demand with an executor — person, service, or robot. Executors are swappable. No robot-specific abstraction in the core.
+Physical work is a Demand with an executor — person, service, or robot. The core knows only "executor" and never learns a specific robot. Which units are supported is a product decision that starts small, not an architectural one.
 
 ## ADR-011 — One log is the product surface
 
