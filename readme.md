@@ -1,5 +1,10 @@
 # OTIUM 🕰️
 
+![](https://img.shields.io/gitlab/pipeline-status/otium-hq/otium?branch=main&logo=gitlab)
+![](https://gitlab.com/otium-hq/otium/badges/main/coverage.svg)
+![](https://img.shields.io/badge/3.13.2-gray?logo=python)
+![](https://img.shields.io/badge/ty_checked-gray?logo=astral)
+![](https://img.shields.io/badge/uv-gray?logo=uv)
 ![](https://img.shields.io/badge/site-otium.run-9A671D)
 
 > A life spent on what you meant it to be.
