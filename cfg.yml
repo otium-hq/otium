@@ -1,0 +1,7 @@
+local:
+  log_level: DEBUG
+  e2e: false
+
+beta:
+  log_level: INFO
+  e2e: true
