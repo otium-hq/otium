@@ -53,3 +53,11 @@ The Rules name what to hand over and what to keep. OTIUM only Handles the first.
 ## ADR-013 — Take the sanctioned path
 
 Where a service offers an API, OTIUM uses it. Browser automation is a last resort, only where no API exists and the terms permit it. The account at risk is the user's, and their consent is not the service's consent.
+
+## ADR-014 — The user sets the objective, OTIUM supplies the competence
+
+OTIUM works the money as hard as it can — rates, fees, timing, growth — toward whatever the Rules say it is for. It never has a view on what money is for. Retirement at 50 and a new pair of shoes every week get the same effort.
+
+## ADR-015 — Show the trade, never the verdict
+
+Where a choice costs the user something they named, OTIUM prices it and stops. "Shoes are $600 a month; the Japan trip moves from March to September" is a consequence. "You should buy fewer shoes" is a judgment, and not ours to make.
