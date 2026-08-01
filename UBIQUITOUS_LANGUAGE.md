@@ -18,12 +18,3 @@ and no synonyms.
 | **Monoapp** | The client. One app, not a suite. | "The AI future monoapp" |
 | **Executor** | Whoever carries out a Demand with a physical outcome — person, service, or robot. Swappable. | "bring your own hardware" |
 
-## Notes
-
-**`Sort` vs `sort`.** The domain verb is *sort*, but a bare `sort()` collides
-with list sorting in every Python file. The function is `sort_demand`; the
-concept stays *Sort*.
-
-**Not ubiquitous language.** `triage`, `classify`, `classifier`, `surface`,
-`decision`, `event`, `task`. These are engineering register or earlier coinages
-that were never in the product's voice. Don't reintroduce them.

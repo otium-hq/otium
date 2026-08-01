@@ -45,23 +45,3 @@ Physical work is a Demand with an executor — person, service, or robot. Execut
 ## ADR-011 — One log is the product surface
 
 Every Demand and every action appends to one ordered log. Generated views, the weekly look, and undo are all queries over it. No second store.
-
-## ADR-012 — The core names no vendor
-
-Provider and model are a `provider:model` key in `cfg.yml`; credentials come from the environment. Two wire formats are implemented natively, each on its own SDK — no compatibility shim standing in for the other. Application code names no vendor.
-
-## ADR-013 — No agent framework until a test needs one
-
-Sorting a Demand is one call with structured output. The seam is a one-method Protocol; unit tests inject a fake, so no network and no key. pydantic-ai when multi-step execution arrives, not before.
-
-## ADR-014 — Prompts and Rules are both markdown
-
-Prompts ship as `.md` files inside the package. Rules are the user's own `.md`. Neither is a Python string.
-
-## ADR-015 — Approval lives in the log, not inside a durable run
-
-An action awaiting approval is a log entry, not a paused process. Durable replay and interactive approval are in tension; the log is ours either way.
-
-## ADR-016 — Aggregators, not vendors
-
-One adapter per domain — home, car, finance — never one per device or institution. Vendor fan-out is the aggregator's problem, not ours.
