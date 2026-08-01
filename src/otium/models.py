@@ -22,6 +22,26 @@ class Demand(BaseModel):
     occurred_at: datetime
 
 
+class Account(BaseModel):
+    """A connected account holding money."""
+
+    name: str
+    balance_cents: int
+    apy: float = Field(ge=0.0)
+
+
+class Finding(BaseModel):
+    """Something the money is costing the user, priced.
+
+    A Finding states the cost and what is available instead. It never says
+    what the user should do about it (ADR-015).
+    """
+
+    what: str
+    costing_cents_per_year: int
+    instead: str
+
+
 class Proposal(BaseModel):
     """What the model proposes for a Demand.
 
