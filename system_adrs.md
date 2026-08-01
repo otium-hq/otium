@@ -49,3 +49,7 @@ Every Demand and every action appends to one ordered log. Generated views, the w
 ## ADR-012 — What the user keeps is never Handled
 
 The Rules name what to hand over and what to keep. OTIUM only Handles the first. A Demand touching what they kept is Brought — that friction is the life they asked to protect, and removing it removes the thing.
+
+## ADR-013 — Take the sanctioned path
+
+Where a service offers an API, OTIUM uses it. Browser automation is a last resort, only where no API exists and the terms permit it. The account at risk is the user's, and their consent is not the service's consent.
