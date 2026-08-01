@@ -2,11 +2,18 @@
 
 Each story is the Rules, a Demand, and the Outcome. S-01 to S-06 exercise one capability alone. C-01 to C-05 combine them.
 
-## S-01 — money
+## S-01 — money · see the shortfall coming
 
-**Rules** Flag anything that looks like a double charge.
-**Demand** Two identical $79.99 charges from Acme Cloud, four minutes apart.
-**Outcome** Brought, both charges side by side. Nothing acted on — read only.
+Most people have no buffer — 59% can't cover $1,000 without debt, 40% hold no savings at all. The value here is lead time, not the transfer: ACH from a linked account takes 1–3 business days, so noticing on the 1st is too late to be free.
+
+**Rules** Never let me overdraft. Move money if you see it coming. Tell me if you can't fix it.
+**Demand** The 24th. Rent of $1,800 leaves on the 1st, payday the 30th nets $1,450, checking holds $310. The 1st projects to −$40.
+
+**Outcome, with a buffer** Handled — $500 pulled from the linked savings on the 24th, clearing well before the 1st.
+
+**Outcome, without one** Brought on the 24th with the options priced: overdraft $35, card at 22% for eleven days ≈ $12, breaking the CD costs $8 of accrued interest with principal intact, or move the rent date. A recommendation, and the arithmetic behind it.
+
+The second branch is the common case, and it is the one worth being good at.
 
 ## S-02 — email
 
