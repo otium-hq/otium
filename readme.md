@@ -59,3 +59,21 @@ else Pushed back
   sorter -> log : append refusal
 end
 ```
+
+# Structure
+
+```
+src/otium/
+├── config.py
+├── models.py            Demand, Outcome, Rules
+├── sorter.py            Sorter — Demand + Rules → Outcome
+├── log_service.py       LogService — the one log
+└── clients/             one module per external system, named for the system
+    ├── anthropic.py
+    ├── openai.py
+    ├── plaid.py
+    └── twilio.py
+```
+
+Suffixes: `_service`, `_client`, `_controller`, `_module`, `_dto`, `_entity`.
+Never `_adapter`. Colocated unit tests as `foo_test.py`; integration in `tests/`.
