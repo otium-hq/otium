@@ -67,21 +67,22 @@ src/otium/
 ├── config.py
 ├── models.py            Demand, Outcome, Rules
 ├── sorter.py            Sorter — Demand + Rules → Outcome
-├── sorter_test.py
+├── test_sorter.py
 ├── log_service.py       LogService — the one log
-├── log_service_test.py
+├── test_log_service.py
 └── clients/             one module per external system, named for the system
     ├── anthropic.py
-    ├── anthropic_test.py
+    ├── test_anthropic.py
     ├── openai.py
     ├── plaid.py
     └── twilio.py
 
 tests/
+├── fixtures/containers.py
 └── test_integration.py
 ```
 
-Unit tests colocated as `foo_test.py`, injecting fakes — no network, no keys.
+Unit tests colocated as `test_foo.py`, dependencies patched — no network, no keys.
 Integration in `tests/`, testcontainers where a real service is needed.
 
 Suffixes: `_service`, `_client`, `_controller`, `_module`, `_dto`, `_entity`.
