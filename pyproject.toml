@@ -4,6 +4,7 @@ version = "1.0.0-beta"
 description = "A life spent on what you meant it to be."
 requires-python = "==3.13.2"
 dependencies = [
+    "plaid-python>=42.0.0",
     "pydantic>=2.9.2",
 ]
 

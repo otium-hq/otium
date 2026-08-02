@@ -2,6 +2,7 @@
 
 import enum
 from datetime import datetime
+from typing import Optional
 
 from pydantic import BaseModel, Field
 
@@ -27,7 +28,8 @@ class Account(BaseModel):
 
     name: str
     balance_cents: int
-    apy: float = Field(ge=0.0)
+    # Reason: Plaid reports no yield on depository accounts, so this is often unknown.
+    apy: Optional[float] = Field(default=None, ge=0.0)
 
 
 class Finding(BaseModel):

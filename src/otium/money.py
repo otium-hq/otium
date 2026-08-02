@@ -21,6 +21,8 @@ def idle_cash(account: Account, best_apy: float) -> Finding | None:
         51956
 
     """
+    if account.apy is None:
+        return None
     gap = best_apy - account.apy
     if gap <= 0:
         return None

@@ -31,3 +31,15 @@ def test_idle_cash_should_find_nothing_when_the_account_already_earns_the_best_r
 
     # Assert
     assert finding is None
+
+
+def test_idle_cash_should_find_nothing_when_the_rate_is_unknown() -> None:
+    """Plaid reports no yield, so an unpriceable gap is not a Finding."""
+    # Arrange
+    unknown = Account(name="Everyday Savings", balance_cents=1_240_000)
+
+    # Act
+    finding = idle_cash(unknown, best_apy=0.042)
+
+    # Assert
+    assert finding is None
